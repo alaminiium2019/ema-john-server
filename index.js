@@ -74,6 +74,6 @@ app.get('/', (req, res) => {
     res.send("hello, programmers");
 })
 
-app.listen(8000, () => {
+app.listen(process.env.PORT || 8000, () => {
     console.log("Listenig is works");
 })
